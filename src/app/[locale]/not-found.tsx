@@ -2,8 +2,8 @@
 import { Button, Icon, Typography } from '@/components';
 import { defaultButtonClasses } from '@/components/atoms/Button/Button';
 import { useRouter } from '@/i18n/routing';
-import { useTranslations } from 'next-intl';
 import classNames from 'classnames';
+import { useTranslations } from 'next-intl';
 import type { FC } from 'react';
 
 export const NotFound: FC = () => {
