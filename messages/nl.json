@@ -2,5 +2,11 @@
 	"HomePage": {
 		"title": "Nextjs GraphQL snelstart",
 		"description": "Next.js GraphQL Quickstart is een moderne, full-stack webapplicatiesjabloon ontworpen om u te helpen snel aan de slag te gaan met Next.js, GraphQL, Prisma, Apollo Client en Redux Toolkit. "
+	},
+	"NotFound": {
+		"title": "404 - Pagina Niet Gevonden",
+		"description": "Sorry, de pagina die u zoekt bestaat niet of is verplaatst.",
+		"errorCode": "Foutcode: 404",
+		"goHome": "Ga naar Home"
 	}
 }
