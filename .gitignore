@@ -43,8 +43,6 @@ next-env.d.ts
 /.vscode
 /.cursor
 
-TODO.md
-
 certificates
 
 *storybook.log
