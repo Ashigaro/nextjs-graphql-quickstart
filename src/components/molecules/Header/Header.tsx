@@ -1,6 +1,6 @@
 'use client';
 import { Button, Icon, SelectBox, Typography } from '@/components';
-import useTheme from '@/hook/useTheme';
+import useTheme from '@/hooks/useTheme';
 import { type LocaleType, usePathname, useRouter } from '@/i18n/routing';
 import { LANGUAGES } from '@/utils/constants';
 import { useLocale } from 'next-intl';
