@@ -1,7 +1,14 @@
 {
 	"HomePage": {
-		"title": "Nextjs GraphQL Quickstart",
-		"description": "Next.js GraphQL Quickstart is a modern, full-stack web application template designed to help you get started quickly with Next.js, GraphQL, Prisma, Apollo Client, and Redux Toolkit. This project offers a powerful, scalable foundation for building dynamic and performant web applications using the latest technologies."
+		"badge": "Production Ready Template",
+		"title": "Next.js GraphQL Quickstart",
+		"description": "A modern, full-stack web application template designed to help you get started quickly with Next.js, GraphQL, Prisma, Apollo Client, and Redux Toolkit. Build dynamic and performant applications using the latest technologies.",
+		"viewSource": "View on GitHub",
+		"techStack": "Built With Modern Tech Stack",
+		"techStackDescription": "Leveraging the best tools and frameworks to deliver exceptional web experiences with type safety, performance, and developer experience in mind.",
+		"readyToStart": "Ready to Start Building?",
+		"readyDescription": "Clone the repository and start building your next amazing project with this powerful, production-ready template.",
+		"starOnGitHub": "Star on GitHub"
 	},
 	"NotFound": {
 		"title": "404 - Page Not Found",

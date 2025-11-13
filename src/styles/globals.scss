@@ -1,6 +1,11 @@
 @use "./theme" as *;
 @import "tailwindcss/index.css";
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   background: var(--color-background);
   --scroll: -5;
@@ -9,11 +14,33 @@ body {
   -ms-backface-visibility: hidden;
   font-family: var(--font-geist-sans), serif;
   color: var(--color-tx-regular);
+  overflow-x: hidden;
 }
 
 /* English */
 :lang(en) {
   font-family: var(--font-geist-sans), serif;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Prevent horizontal scrolling */
+* {
+  box-sizing: border-box;
 }
 
 .loading-balls {

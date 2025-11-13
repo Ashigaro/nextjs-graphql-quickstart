@@ -4,7 +4,7 @@ import type { FC } from 'react';
 
 export const Footer: FC = () => {
 	return (
-		<footer className="absolute bottom-0 flex w-full border-t border-t-br-regular bg-background-component py-6">
+		<footer className="flex w-full border-t border-t-br-regular bg-background-component py-6">
 			<div className="mx-auto flex items-center gap-3">
 				<span className="text-sm text-gray-500">By: Shekoofeh Dezhahanj</span>
 				<Link

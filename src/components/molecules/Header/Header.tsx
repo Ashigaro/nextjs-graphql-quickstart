@@ -1,7 +1,8 @@
 'use client';
 import { Button, Icon, SelectBox, Typography } from '@/components';
-import useTheme from '@/hooks/useTheme';
 import { type LocaleType, usePathname, useRouter } from '@/i18n/routing';
+import { selectTheme, setTheme } from '@/stores/reducers/themeSlice';
+import { useAppDispatch, useAppSelector } from '@/stores/reduxHooks';
 import { LANGUAGES } from '@/utils/constants';
 import { useLocale } from 'next-intl';
 import Image from 'next/image';
@@ -14,10 +15,11 @@ export const Header: FC = () => {
 	const pathname = usePathname();
 	const params = useParams();
 	const locale = useLocale();
-	const { theme, changeTheme } = useTheme();
+	const dispatch = useAppDispatch();
+	const theme = useAppSelector(selectTheme);
 
 	const clickChangeTheme = () => {
-		changeTheme(theme === 'dark' ? '' : 'dark');
+		dispatch(setTheme(theme === 'dark' ? '' : 'dark'));
 	};
 
 	const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -35,7 +37,7 @@ export const Header: FC = () => {
 
 	return (
 		<header className="sticky left-0 top-0 w-full border-b border-b-br-regular bg-background p-4">
-			<div className="mx-auto flex w-full max-w-4xl justify-between">
+			<div className="mx-auto flex w-full max-w-5xl justify-between">
 				<div className="flex gap-2">
 					<Image src="/assets/svg/logo.svg" alt="logo" width={24} height={24} />
 					<Typography.Text className="font-medium">

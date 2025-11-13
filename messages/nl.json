@@ -1,7 +1,14 @@
 {
 	"HomePage": {
-		"title": "Nextjs GraphQL snelstart",
-		"description": "Next.js GraphQL Quickstart is een moderne, full-stack webapplicatiesjabloon ontworpen om u te helpen snel aan de slag te gaan met Next.js, GraphQL, Prisma, Apollo Client en Redux Toolkit. "
+		"badge": "Productie Klare Sjabloon",
+		"title": "Next.js GraphQL Quickstart",
+		"description": "Een moderne, full-stack webapplicatiesjabloon ontworpen om u snel op weg te helpen met Next.js, GraphQL, Prisma, Apollo Client en Redux Toolkit. Bouw dynamische en krachtige applicaties met de nieuwste technologieën.",
+		"viewSource": "Bekijk op GitHub",
+		"techStack": "Gebouwd met Moderne Tech Stack",
+		"techStackDescription": "Het benutten van de beste tools en frameworks om uitzonderlijke webervaringen te leveren met type veiligheid, prestaties en ontwikkelaarservaring in gedachten.",
+		"readyToStart": "Klaar om te Beginnen met Bouwen?",
+		"readyDescription": "Kloon de repository en begin met het bouwen van uw volgende geweldige project met deze krachtige, productie-klare sjabloon.",
+		"starOnGitHub": "Ster op GitHub"
 	},
 	"NotFound": {
 		"title": "404 - Pagina Niet Gevonden",
