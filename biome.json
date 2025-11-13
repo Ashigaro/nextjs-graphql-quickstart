@@ -13,7 +13,8 @@
 			"!**/.next",
 			"!**/build",
 			"!**/Icons.tsx",
-			"!**/prisma.ts"
+			"!**/prisma.ts",
+			"!**/styles/theme"
 		]
 	},
 	"formatter": {

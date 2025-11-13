@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import { type FC, forwardRef, type InputHTMLAttributes } from 'react';
-import { type AvailableIcons, Icon, Typography } from '@/components';
+import { type AvailableIcons, Icon } from '@/components/atoms/Icon/Icon';
+import { Typography } from '@/components/atoms/Typography/Typography';
 import { Feedback } from './Feedback';
 
 const { Text } = Typography;

@@ -29,7 +29,8 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		"commitlint.config.ts",
-		".next/dev/types/**/*.ts"
+		".next/dev/types/**/*.ts",
+		".storybook/**/*"
 	],
 	"exclude": ["node_modules"],
 	"ts-node": {

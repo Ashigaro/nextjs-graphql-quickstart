@@ -11,7 +11,9 @@
 		"format:fix": "biome check --fix --unsafe",
 		"type-check": "tsc --noEmit",
 		"prepare": "husky",
-		"postinstall": "prisma generate"
+		"postinstall": "prisma generate",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
 	},
 	"dependencies": {
 		"@apollo/client": "^4.0.9",
@@ -51,7 +53,14 @@
 		"sass": "1.94.0",
 		"sass-loader": "16.0.6",
 		"ts-node": "10.9.2",
-		"typescript": "5.9.3"
+		"typescript": "5.9.3",
+		"storybook": "^10.0.7",
+		"@storybook/nextjs": "^10.0.7",
+		"@chromatic-com/storybook": "^4.1.2",
+		"@storybook/addon-docs": "^10.0.7",
+		"@storybook/addon-onboarding": "^10.0.7",
+		"@storybook/addon-a11y": "^10.0.7",
+		"@storybook/addon-vitest": "^10.0.7"
 	},
 	"prisma": {
 		"seed": "ts-node --transpile-only ./prisma/seed.ts"
