@@ -1,13 +1,13 @@
 'use client';
+import Image from 'next/image';
+import { useParams } from 'next/navigation';
+import { useLocale } from 'next-intl';
+import { type FC, useTransition } from 'react';
 import { Button, Icon, SelectBox, Typography } from '@/components';
 import { type LocaleType, usePathname, useRouter } from '@/i18n/routing';
 import { selectTheme, setTheme } from '@/stores/reducers/themeSlice';
 import { useAppDispatch, useAppSelector } from '@/stores/reduxHooks';
 import { LANGUAGES } from '@/utils/constants';
-import { useLocale } from 'next-intl';
-import Image from 'next/image';
-import { useParams } from 'next/navigation';
-import { type FC, useTransition } from 'react';
 
 export const Header: FC = () => {
 	const router = useRouter();

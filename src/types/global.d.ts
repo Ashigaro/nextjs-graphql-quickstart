@@ -1,6 +1,6 @@
 import type { AvailableIcons } from '@/components';
 
-interface IFeature {
+export interface IFeature {
 	id: number;
 	icon: AvailableIcons;
 	title: string;

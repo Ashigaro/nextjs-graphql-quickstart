@@ -1,5 +1,5 @@
+import { type AnyAction, configureStore, type Reducer } from '@reduxjs/toolkit';
 import rootReducer from '@/stores/reducers';
-import { type AnyAction, type Reducer, configureStore } from '@reduxjs/toolkit';
 
 export type RootState = ReturnType<typeof rootReducer>;
 

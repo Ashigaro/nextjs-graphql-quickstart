@@ -1,5 +1,5 @@
-import { type AvailableIcons, Icon, Typography } from '@/components';
 import type { FC } from 'react';
+import { type AvailableIcons, Icon, Typography } from '@/components';
 
 interface IProps {
 	icon: AvailableIcons;

@@ -1,5 +1,5 @@
-import { schema } from '@/graphql/schema';
 import { createYoga } from 'graphql-yoga';
+import { schema } from '@/graphql/schema';
 
 interface NextContext {
 	params: Promise<Record<string, string>>;

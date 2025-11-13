@@ -1,6 +1,6 @@
-import { Typography } from '@/components';
 import classNames from 'classnames';
 import type { FC } from 'react';
+import { Typography } from '@/components';
 
 const { Text } = Typography;
 interface IFeedback {

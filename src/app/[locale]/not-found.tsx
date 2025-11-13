@@ -1,10 +1,10 @@
 'use client';
-import { Button, Icon, Typography } from '@/components';
-import { defaultButtonClasses } from '@/components/atoms/Button/Button';
-import { useRouter } from '@/i18n/routing';
 import classNames from 'classnames';
 import { useTranslations } from 'next-intl';
 import type { FC } from 'react';
+import { Button, Typography } from '@/components';
+import { defaultButtonClasses } from '@/components/atoms/Button/Button';
+import { useRouter } from '@/i18n/routing';
 
 export const NotFound: FC = () => {
 	const t = useTranslations('NotFound');

@@ -1,8 +1,8 @@
 'use client';
 
+import { type FC, type ReactNode, useEffect } from 'react';
 import { selectTheme, setTheme } from '@/stores/reducers/themeSlice';
 import { useAppDispatch, useAppSelector } from '@/stores/reduxHooks';
-import { type FC, type ReactNode, useEffect } from 'react';
 
 const THEME_STORAGE_KEY = 'app-theme';
 

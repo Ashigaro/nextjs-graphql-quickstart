@@ -1,5 +1,5 @@
-import type { AppState } from '@/stores/store';
 import { createSelector, createSlice } from '@reduxjs/toolkit';
+import type { AppState } from '@/stores/store';
 
 type MainState = {
 	sentences?: string[];

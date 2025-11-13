@@ -1,8 +1,8 @@
 'use client';
 
-import { store } from '@/stores/store';
 import type { ReactNode } from 'react';
 import { Provider } from 'react-redux';
+import { store } from '@/stores/store';
 
 interface IProvider {
 	children: ReactNode;

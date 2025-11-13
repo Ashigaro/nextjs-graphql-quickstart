@@ -16,7 +16,9 @@ builder.queryField('sentence', (t) =>
 			const everyIdInTable = await prisma.sentence.findMany({
 				select: { id: true },
 			});
-			const idArray = everyIdInTable.map((element) => element.id);
+			const idArray = everyIdInTable.map(
+				(element: { id: string }) => element.id,
+			);
 			const randomIndex = Math.floor(Math.random() * idArray.length);
 			const randomIdFromTable = idArray[randomIndex];
 			return prisma.sentence.findFirst({

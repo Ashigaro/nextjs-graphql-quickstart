@@ -1,16 +1,24 @@
 'use client';
+import { useQuery } from '@apollo/client/react';
+import classNames from 'classnames';
+import { useTranslations } from 'next-intl';
 import { Icon, Loading, Typography } from '@/components';
 import { defaultButtonClasses } from '@/components/atoms/Button/Button';
 import IconBox from '@/components/molecules/IconBox/IconBox';
 import { GetSentences } from '@/graphql/gql/main-gql';
 import { FEATURES } from '@/utils/constants';
-import { useQuery } from '@apollo/client';
-import classNames from 'classnames';
-import { useTranslations } from 'next-intl';
+
+interface SentenceData {
+	sentence?: {
+		id: string;
+		quote?: string | null;
+		author?: string | null;
+	};
+}
 
 export default function HomePage() {
 	const t = useTranslations('HomePage');
-	const { data, loading } = useQuery(GetSentences, {
+	const { data, loading } = useQuery<SentenceData>(GetSentences, {
 		fetchPolicy: 'network-only',
 	});
 

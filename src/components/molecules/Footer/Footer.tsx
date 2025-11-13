@@ -1,6 +1,6 @@
-import { Icon } from '@/components';
 import Link from 'next/link';
 import type { FC } from 'react';
+import { Icon } from '@/components';
 
 export const Footer: FC = () => {
 	return (
