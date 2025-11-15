@@ -23,3 +23,4 @@ export const Default: Story = {
 		defaultValue: '1',
 	},
 };
+
