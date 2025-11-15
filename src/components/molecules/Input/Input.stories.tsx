@@ -20,4 +20,3 @@ export const Default: Story = {
 		type: 'email',
 	},
 };
-

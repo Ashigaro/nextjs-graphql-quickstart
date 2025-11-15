@@ -20,4 +20,3 @@ export const Default: Story = {
 		isDisabled: false,
 	},
 };
-
