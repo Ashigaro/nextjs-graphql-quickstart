@@ -3,14 +3,13 @@ name: Build and Push Next.js Image to GHCR
 on:
   push:
     branches:
-      - main # اجرای پایپ‌لاین با هر پوش روی برنچ اصلی
-
+      - develop 
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write # این دسترسی برای آپلود کانتینر در گیت‌هاب ضروری است
+      packages: write 
 
     steps:
       - name: Checkout Repository
