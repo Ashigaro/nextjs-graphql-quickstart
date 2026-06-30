@@ -1,0 +1,31 @@
+name: Build and Push Next.js Image to GHCR
+
+on:
+  push:
+    branches:
+      - main # اجرای پایپ‌لاین با هر پوش روی برنچ اصلی
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write # این دسترسی برای آپلود کانتینر در گیت‌هاب ضروری است
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/ashigaro/nextjs-graphql-quickstart:latest
