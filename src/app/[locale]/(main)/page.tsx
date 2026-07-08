@@ -76,7 +76,7 @@ export default function HomePage() {
 							<div className="relative flex flex-col gap-6 rounded-2xl border border-br-regular bg-background-component p-8 sm:p-12">
 								<Icon
 									name="React"
-									size="7em"
+									size="3em"
 									className="absolute right-6 top-6 opacity-10 text-text-secondary sm:right-10 sm:top-10"
 								/>
 								<Typography.Paragraph className="relative z-10 text-xl italic leading-relaxed sm:text-2xl">
