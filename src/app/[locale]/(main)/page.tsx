@@ -24,9 +24,9 @@ export default function HomePage() {
 
 	return (
 		<div className="mx-auto flex w-full max-w-5xl flex-col">
-  <p>CD Test - Deploy Successful</p>
-  {/* Hero Section */}
-  <section className="flex w-full items-center justify-center px-6 py-16">
+  			<p>CD Test - Deploy Successful</p>
+  			{/* Hero Section */}
+  			<section className="flex w-full items-center justify-center px-6 py-16">
 			{/* Hero Section */}
 			<section className="flex w-full items-center justify-center px-6 py-16">
 				<div className="mx-auto flex w-full flex-col items-center gap-8 text-center">
