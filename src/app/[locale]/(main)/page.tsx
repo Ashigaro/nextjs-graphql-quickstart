@@ -24,9 +24,6 @@ export default function HomePage() {
 
 	return (
 		<div className="mx-auto flex w-full max-w-5xl flex-col">
-  			<p>CD Test - Deploy Successful</p>
-  			{/* Hero Section */}
-  			<section className="flex w-full items-center justify-center px-6 py-16">
 			{/* Hero Section */}
 			<section className="flex w-full items-center justify-center px-6 py-16">
 				<div className="mx-auto flex w-full flex-col items-center gap-8 text-center">
@@ -79,7 +76,7 @@ export default function HomePage() {
 							<div className="relative flex flex-col gap-6 rounded-2xl border border-br-regular bg-background-component p-8 sm:p-12">
 								<Icon
 									name="React"
-									size="3em"
+									size="7em"
 									className="absolute right-6 top-6 opacity-10 text-text-secondary sm:right-10 sm:top-10"
 								/>
 								<Typography.Paragraph className="relative z-10 text-xl italic leading-relaxed sm:text-2xl">
